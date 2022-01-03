@@ -11,6 +11,8 @@
       at Runtime._createJestObjectFor (node_modules/jest-runtime/build/index.js:2193:46)
 ```
 
-Addng a direct dependency on jest-environment-node fixes the issue, but the dependency in `@types/jest-environment-puppeteer` should be fixed.
+Adding a direct dependency on jest-environment-node "fixes" the issue.
+
+The dependency in `@types/jest-environment-puppeteer` on `jest-environment-node` should be fixed.
 
 `npm i -D jest-environment-node`
